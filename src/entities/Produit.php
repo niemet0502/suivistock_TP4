@@ -6,6 +6,9 @@
     private $qteStock;
     private $id;
 
+    public function __construct(){
+      
+    }
     //getters
     public function getId(){
       return $id;
