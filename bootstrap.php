@@ -17,8 +17,10 @@ $config = Setup::createAnnotationMetadataConfiguration(array(__DIR__."/src/entit
 
 // database configuration parameters
 $conn = array(
+    'dbname' => 'doctrine_bdd',
+    'user' => 'root',
+    'password' => '',
     'driver' => 'pdo_mysql',
-    'path' => __DIR__ . '/db.sqlite',
 );
 
 // obtaining the entity manager
