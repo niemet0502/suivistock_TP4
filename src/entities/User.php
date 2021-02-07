@@ -7,6 +7,9 @@
     private $password;
     private $etat;
 
+    public function __construct(){
+      
+    }
     //getters
     public function getId(){
       return $id;
