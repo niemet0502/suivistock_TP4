@@ -8,22 +8,22 @@
   class Product
   {
     /**
-   * @ORM\Id
-   * @ORM\Column(type="integer")
-   * @ORM\GeneratedValue
-   */
+     * @ORM\Id
+     * @ORM\Column(type="integer")
+     * @ORM\GeneratedValue
+     */
     private $id;
     /**
-   * @ORM\Column(type="string")
-   */
+     * @ORM\Column(type="string")
+     */
     private $ref;
     /**
-   * @ORM\Column(type="string")
-   */
+     * @ORM\Column(type="string")
+     */
     private $nom;
      /**
-   * @ORM\Column(type="id")
-   */
+     * @ORM\Column(type="integer")
+     */
     private $qteStock;
 
     public function __construct(){
