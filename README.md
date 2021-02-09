@@ -6,4 +6,11 @@
 ```bash
 git fetch origin 
 ```
+* Mettre les modifs sur votre branche locale main :
+
+```bash
+git pull origin main 
+```
+
+
 <img src="public/images/dieux.jpg" />
