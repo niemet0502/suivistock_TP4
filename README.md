@@ -31,4 +31,10 @@ git pull origin main
 composer install 
 ```
 
+* Ensuite faites la commande suivante pour creer les entites  :
+
+```bash
+vendor/bin/doctrine orm:schema-tool:update --force --dump-sql
+```
+
 <img src="public/images/dieux.jpg" />
