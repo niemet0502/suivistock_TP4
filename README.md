@@ -12,5 +12,6 @@ git fetch origin
 git pull origin main 
 ```
 
+* Creer une base de donnee locale dans votre phpmyadmin qui s'appelle doctrine_bdd :
 
 <img src="public/images/dieux.jpg" />
