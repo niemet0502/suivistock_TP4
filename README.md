@@ -36,5 +36,10 @@ composer install
 ```bash
 vendor/bin/doctrine orm:schema-tool:update --force --dump-sql
 ```
+* Vous pouvez aussi checker la doc de dotrine  :
+
+```bash
+https://www.doctrine-project.org/projects/doctrine-orm/en/2.8/tutorials/getting-started.html
+```
 
 <img src="public/images/dieux.jpg" />
