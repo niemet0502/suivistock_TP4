@@ -30,12 +30,17 @@
      */
     private $etat;
 
+     /**
+     * @ORM\Column(type="string")
+     */
+    private $login;
+
     public function __construct(){
       
     }
     //getters
     public function getId(){
-      return $id;
+      return $this->$id;
     }
 
     public function getPrenom(){
@@ -46,6 +51,10 @@
     }
     public function getEtat(){
       return $etat;
+    }
+
+    public function getLogin(){
+      return $login;
     }
 
     //setters
@@ -67,6 +76,9 @@
 
     public function setEtat($etat){
       $this->etat = $etat;
+    }
+    public function setLogin($login){
+      $this->login = $login;
     }
   }
 ?>
