@@ -11,7 +11,7 @@
             </div>
 
             <!-- Login Form -->
-            <form action="/BanqueDuPeupleOrm/User/authentification" method="post">
+            <form action="/suivistock/User/authentification" method="post">
                 <input type="text" id="login" class="fadeIn second" name="login" placeholder="login" required>
                 <input type="password" id="password" class="fadeIn third" name="mdp" placeholder="password" required>
                 <input type="submit" class="fadeIn fourth" name="vefUser" value="Log In">
