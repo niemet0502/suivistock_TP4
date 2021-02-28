@@ -1,5 +1,6 @@
 <?php
   use Doctrine\ORM\Mapping as ORM;
+  use Doctrine\Common\Collections\ArrayCollection;
 
   /**
    * @ORM\Entity
@@ -40,21 +41,27 @@
     }
     //getters
     public function getId(){
-      return $this->$id;
+      return $this->id;
     }
 
     public function getPrenom(){
-      return $prenom;
+      return $this->prenom;
     }
+
+    public function getNom(){
+      return $this->nom;
+    }
+
     public function getPassword(){
-      return $password;
+      return $this->password;
     }
+    
     public function getEtat(){
-      return $etat;
+      return $this->etat;
     }
 
     public function getLogin(){
-      return $login;
+      return $this->login;
     }
 
     //setters
