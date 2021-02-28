@@ -12,6 +12,10 @@ class Autoloader{
             # code...
             require_once "src/controller/".$class.".php";
         }
+        elseif(file_exists("src/entities/".$class.".php")) {
+            # code...
+            require_once "src/entities/".$class.".php";
+        }
         // NAMESPACE
         elseif (file_exists(str_replace("\\","/",$class.".php"))) {
             # code...
