@@ -14,7 +14,7 @@
                 $user = $udb->getUser($login, $mdp);
                 if($user != null)
                 {
-                    $_SESSION['user'] = $user[0]->getNom()." ".$user[0]->getPnom();
+                    $_SESSION['user'] = $user[0]->getNom()." ".$user[0]->getPrenom();
                     $this->view->load("acceuil/acceuil");
                 }else{
                     $error = "LOGIN OU MOT DE PASSE INCORRECT !!!";
