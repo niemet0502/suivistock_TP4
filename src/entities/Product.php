@@ -31,16 +31,16 @@
     }
     //getters
     public function getId(){
-      return $id;
+      return $this->id;
     }
     public function getNom(){
-      return $nom;
+      return $this->nom;
     }
     public function getQteStock(){
-      return $qteStock;
+      return $this->qteStock;
     }
     public function getRef(){
-      return $ref;
+      return $this->ref;
     }
     //setters
     public function setNom($nom){
