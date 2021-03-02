@@ -17,7 +17,7 @@
           $array[0][1]++;
           $id = $array[0][1];
       }
-      $numero = "C_".date('d').date('m').date('Y')."_".$id;
+      $numero = "PR_".date('d').date('m').date('Y')."_".$id;
       return $numero;
     }
 
