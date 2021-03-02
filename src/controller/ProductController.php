@@ -9,4 +9,12 @@ class ProductController extends Controller{
       $products = $cdb->getProduct();
       return $this->view->load("product/liste",$products);
   }
+
+  public function add()
+  {
+      $cdb = new ProductDb();
+      $numero = $cdb->genererNum();
+      $array = array("",$numero);
+      return $this->view->load("product/add",$array);
+  }
 }
