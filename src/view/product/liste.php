@@ -17,7 +17,6 @@
     <?php 
       if($data){
         foreach($data as $product){
-          
           ?>
             <tr>
               <th scope="row"><?= $product->getId() ?></th>
