@@ -3,7 +3,7 @@
 ?>
 <div class="col-xl-12 order-xl-1 mt-2">
     <div class="card">
-    <form>
+    <form  method="post" action="/suivistock/Product/addProduct">
       <div class="card-header">
         <div class="row align-items-center">
           <div class="col-8">
@@ -11,7 +11,9 @@
           </div>
           
           <div class="col-4 text-right">
-            <a href="#!" class="btn btn-sm btn-primary">Enregistrer</a>
+            <button type="submit" name="AjoutProduit"  class="btn btn-sm btn-primary">
+              Enregistrer
+            </button>
           </div>
         </div>
       </div>
@@ -29,7 +31,7 @@
               <div class="col-lg-6">
                 <div class="form-group">
                   <label class="form-control-label" for="input-email">Reference</label>
-                  <input type="email" id="input-email" class="form-control" readonly value="<?= $data[1] ?>" placeholder="">
+                  <input type="text" name="ref" id="input-email" class="form-control" readonly value="<?= $data[1] ?>" placeholder="">
                 </div>
               </div>
             </div>
@@ -37,13 +39,13 @@
               <div class="col-lg-6">
                 <div class="form-group">
                   <label class="form-control-label" for="input-first-name">Nom</label>
-                  <input type="text" id="input-first-name" class="form-control">
+                  <input type="text" name="nom" id="input-first-name" class="form-control">
                 </div>
               </div>
               <div class="col-lg-6">
                 <div class="form-group">
                   <label class="form-control-label" for="input-last-name">Quantite en stock</label>
-                  <input type="number" id="input-last-name" class="form-control">
+                  <input type="number" name="stock" id="input-last-name" class="form-control">
                 </div>
               </div>
             </div>

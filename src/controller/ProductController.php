@@ -17,4 +17,21 @@ class ProductController extends Controller{
       $array = array("",$numero);
       return $this->view->load("product/add",$array);
   }
+
+  public function addProduct()
+  {
+      if(isset($_POST['AjoutProduit']))
+      {
+        extract($_POST);
+        $cdb = new ProductDb();
+        $product = new Product();
+
+        $product->setRef($ref);
+        $product->setNom($nom);
+        $product->setQteStock($stock);
+        $cdb->addProduct($product);
+        $products = $cdb->getProduct();
+        return $this->view->load("product/liste",$products);
+      }
+  }
 }
