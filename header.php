@@ -68,7 +68,11 @@
                 <div class="input-group-prepend">
                   <span class="input-group-text"><i class="fas fa-search"></i></span>
                 </div>
-                <input class="form-control" placeholder="Search" type="text">
+                <input class="form-control" id="input-search" placeholder="Search" type="text"> <br>
+                <div class="search-result" style="width: 500px; background-color: white; position: absolute;
+                top: 50px;height : 200px; z-index: 10000; border-radius: 5px; display: none; ">
+                  test
+                </div>
               </div>
             </div>
             <button type="button" class="close" data-action="search-close" data-target="#navbar-search-main" aria-label="Close">
